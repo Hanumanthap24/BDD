@@ -5,8 +5,10 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(format = {"pretty", "html:target/cucumber-htmlreport","json-pretty:target/cucumber-report.json"})
+@CucumberOptions(features ="C:\\Users\\HP\\gitSelenium\\BDD\\src.test.resources\\com\\test\\testcases")
 public class RunCukesTest {
+	
+	
 	
 }
 
