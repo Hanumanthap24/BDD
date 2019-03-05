@@ -1,20 +1,16 @@
 Feature: Free login
-Scenario: CRM Login Test
+Scenario Outline: CRM Login Test
 
 Given User is on login page
 When Titleis CRM
-Then User enters username 
-Then Usepassword
+Then User enters "<username>"
+Then enters the "<pasword>"
 
-Scenario: Testing failure login
-
-Given User is in login page
-When user enters Wrong user name
-And user enters Wrong password
-Then login failed mesage diasplayed
-
-
-
+Examples:
+|username|pasword|
+|Dunny2|pass2|
+|Dunny3|pass3|
+|Dunny4|pass4|
 
 
 

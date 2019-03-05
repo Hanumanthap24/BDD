@@ -23,14 +23,14 @@ public class SmokeTest {
 		System.out.println("i m here");
 	}
 
-	@Then("^User enters username$")
-	public void user_enters_username() throws Throwable {
-		System.out.println("i m here");
+	@Then("^User enters \"(.*)\"$")
+	public void user_enters_username(String username) throws Throwable {
+		System.out.println(username+ "username");
 	}
 
-	@Then("^enters the pasword$")
-	public void usepassword() throws Throwable {
-		System.out.println("i m here");
+	@Then("^enters the \"(.*)\"$")
+	public void usepassword(String pass) throws Throwable {
+		System.out.println(pass+"Password");
 	}
 
 
