@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
@@ -17,7 +18,7 @@ glue= {"com.testDefinition"},
 format = {"pretty", "html:target/Destination"} ,
 strict=true,
 dryRun=true)
-public class RunCukesTest {
+public class RunCukesTest extends AbstractTestNGCucumberTests {
 	 
 	private TestNGCucumberRunner testNGCucumberRunner;
 	
